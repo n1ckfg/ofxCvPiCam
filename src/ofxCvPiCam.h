@@ -54,7 +54,7 @@ public:
     static int width, height;
     static MMAL_POOL_T *camera_video_port_pool;
     static void set_image(cv::Mat _image) {newFrame = true; image = _image;}
-    void setup(int _w, int _h, bool _color);
+    void setup(int _w, int _h, int _fps, bool _color);
     cv::Mat grab() {newFrame = false; return image;}
     MMAL_COMPONENT_T *getCamera(){ return camera; }
 
