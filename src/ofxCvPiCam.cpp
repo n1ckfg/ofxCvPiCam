@@ -39,7 +39,7 @@ static void color_callback(MMAL_PORT_T *port, MMAL_BUFFER_HEADER_T *buffer) {
             ofLogVerbose() << ("Unable to return a buffer to the video port\n");
     }
 }
-void ofxCvPiCam::setup(int _w,int _h,bool _color,int _fps)
+void ofxCvPiCam::setup(int _w,int _h,int _fps,bool _color)
 {
     color = _color;
     width = _w;

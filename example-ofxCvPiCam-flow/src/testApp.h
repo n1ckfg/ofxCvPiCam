@@ -11,7 +11,7 @@ public:
 	void update();
 	void draw();
 	
-    int w,h;
+    int w, h, fps;
     ofxCvPiCam cam;
     cv::Mat frame;
 

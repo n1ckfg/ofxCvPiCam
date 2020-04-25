@@ -4,8 +4,10 @@ using namespace ofxCv;
 using namespace cv;
 
 void testApp::setup() {
-    w = 160;h = 120;
-    cam.setup(w, h,false);
+    w = 160;
+    h = 120;
+    fps = 30;
+    cam.setup(w, h, fps, false);
 
     panel.setPosition(250, 800);
 	
